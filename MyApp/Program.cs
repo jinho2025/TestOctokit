@@ -1,4 +1,5 @@
 ﻿using System;
+using Octokit;
 
 namespace MyApp
 {
@@ -6,6 +7,8 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
+            var client = new GitHubClient(new ProductHeaderValue("TestOctokit"));
+            client.cr
             Console.WriteLine("Hello World!");
         }
     }
